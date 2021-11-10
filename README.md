@@ -4,32 +4,50 @@ A small programming language written in Python from scratch, by building a Lexer
 ## Grammer
 Code => (variable_declaration | condition  | loop | expression)[Code]
 
-variable_declaration => var identifier assign expression
+variable_declaration => var identifier assign expression | condition_expression
+
 language_keywords => 'var'| 'and' | 'or' | 'if' | 'then' | 'elif' | 'else' | 'for' | 'to' | 'step' | 'while' | 'fun' | 'end'
+
+arithmatic_operators => {addition : 'P', multiplication : 'L', subtraction : 'M' , division : 'D'}
+
+logical_operators => {logical_and: 'and', logical_or : 'or', logical_not: '!'}
+
+conditional_operators => {greater_than: '>', less_than: '<', greater_than_equal_to: '>=', less_than_equal_to: '<=', not_equal: '!~', double_equal: '~'}
+
 identifier => ([a:z]([0:9]|[a:z]|'_')[a:z])
+
 assig => "="
-condition => "if" conditional_expression "then" condition_body [ "elif" condition_body|
 
-function-declaration::= function-arguments wrapper function-body wrapper
-function-arguments::= "(" [ { expression "," } ] ")"
-function-body::= program
+condition => "if" conditional_expression "then" [Code] [ "elif" conditional_expression [Code]] | "else" [Code] [condition]
 
-conditional::= "if" comparison wrapper program wrapper [ { "else if" ... } | "else" wrapper program wrapper ]
+condition_expression => expression conditional_operators expression
 
-comparison::= expression [ comparison-operator expression ]
-comparison-operator::= "=="
+loop => "for" identifier "from" Number|identifier "to" Number|identifier "then" [Code] | "while" Number|identifier conditional_operators Number|identifier "then" [Code] 
 
-loop::= "from" expression "to" expression "with" identifier wrapper program wrapper
+expression => term { "P" | "M" term }
 
-expression::= term { "+" | "-" term }
-term::= factor { "*" | "/" | "%" factor }
-factor::= number | string | boolean | array | identifier | "-" factor | "(" expression ")" | function-call
-function-call::= identifier "(" [ { expression "," } ] ")"
-identifier::= { letter }
-number::= { digit } [ "." { digit } ]
-string::= """ [ { * } ] """
-array::= "[" [ { expression "," } ] "]"
-boolean::= "true" | "false"
+term => factor { "L" | "D" factor }
 
-letter::= "a" | "b" | ... | "y" | "z" | "A" | "B" | ... | "Y" | "Z"
-digit::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+factor => Number | string | boolean | array | identifier | "-" factor | "(" expression ")" | function_call
+
+function_declaration => "fun" identifier function_arguments ":" [Code]
+
+function_arguments => "(" [ { expression "," } ] ")"
+
+function_call => identifier function_arguments
+
+Number => { digit } [ "." { digit } ]
+
+string => """ [ { * } ] """
+
+array => "[" [ { expression "," } ] "]"
+
+boolean => "True" | "False"
+
+digit => "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+## Sample Code and its output
+
+
+
+
