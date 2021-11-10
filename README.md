@@ -48,6 +48,6 @@ digit => "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 
 ## Sample Code and its output
 
-
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
