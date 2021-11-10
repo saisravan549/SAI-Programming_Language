@@ -48,6 +48,35 @@ digit => "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
 
 ## Sample Code and its output
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+INPUT: Code for nth fibonaucci number
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.13.58%20PM.png)
+
+OUTPUT:
+
+Value of 'n' is given as 7 and the output from the language is 8, which is a correct answer.
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.14.40%20PM.png)
+#
+INPUT: Code showcasing the syntax for declaring and using the functions along with nested loops
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.21.50%20PM.png)
+
+OUTPUT:
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.22.31%20PM.png)
+#
+INPUT: Code showcasing the operations on list and string
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.35.35%20PM.png)
+
+OUTPUT:
+
+![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.36.07%20PM.png)
+
+
+
+
+
 
 
