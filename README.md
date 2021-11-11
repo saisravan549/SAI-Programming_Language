@@ -81,7 +81,9 @@ As of now, the entire code is read from a text file. So after cloning the projec
 => python3 run.py program.txt
 
 'run.py' is the main file in the project which helps in running the code.
+
 'main.py' acts as a dependency for 'run.py' in which the actual implementation of the entire language resides.
+
 'error_pointer.py' is helps to print the error in the language by pointing to the exact error location.
 
 New suggestions and improvements are always welcome :)
