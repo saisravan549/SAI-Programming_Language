@@ -1,5 +1,5 @@
 # SAI-Programming_Language
-A small programming language written in Python from scratch, by building a Lexer, Parser and an Interpreter. It supports all the arithmatic operations, Variable declarations, Operations with declared variables, Built-In functions like print(), Function declarations, Function Calls, Looping and Conditional statements, Recursion, Arrays and built-in methods that perform operations on these arrays, Array Indexing, String operations and built-in methods for performing additional string operations, String Indexing. The main reason for building this project is completely based on my personal preference. I always wanted to write a code without actual symbols for all arithmatic and logical operations. I always identify a symbol with the letter of the Symbol's spelling that I stress the most while speaking, rather than the symbol itself. For example, I identify '+' symbol as 'P'. This is my natural instinct and having a language that could allow me to write the code based on my preference is always awesome. Along with this, the syntax of the language is very simple and easy to understand. Below, the grammer for the language is mentioned along with some running examples of the language.
+A small programming language written in Python from scratch, by building a Lexer, Parser and an Interpreter. It supports all the arithmatic operations, Variable declarations, Operations with declared variables, Built-In functions like print(), Function declarations, Function Calls, Looping and Conditional statements, Recursion, Arrays and built-in methods that perform operations on these arrays, Array Indexing, String operations and built-in methods for performing additional string operations, String Indexing and Error Handling. The main reason for building this project is completely based on my personal preference. I always wanted to write a code without actual symbols for all arithmatic and logical operations. I always identify a symbol with the letter of the Symbol's spelling that I stress the most while speaking, rather than the symbol itself. For example, I identify '+' symbol as 'P'. This is my natural instinct and having a language that could allow me to write the code based on my preference is always awesome. Along with this, the syntax of the language is very simple and easy to understand. Below, the grammer for the language is mentioned along with some running examples of the language.
 
 ## Grammer
 Code => (variable_declaration | condition  | loop | expression)[Code]
@@ -73,6 +73,18 @@ INPUT: Code showcasing the operations on list and string
 OUTPUT:
 
 ![alt text](https://github.com/saisravan549/SAI-Programming_Language/blob/main/Screen_shots/Screen%20Shot%202021-11-10%20at%206.36.07%20PM.png)
+
+## Instructions for using the project
+
+As of now, the entire code is read from a text file. So after cloning the project, the desired code should be written in 'program.txt' file and the following command should be used to run the code:
+
+=> python3 run.py program.txt
+
+'run.py' is the main file in the project which helps in running the code.
+'main.py' acts as a dependency for 'run.py' in which the actual implementation of the entire language resides.
+'error_pointer.py' is helps to print the error in the language by pointing to the exact error location.
+
+New suggestions and improvements are always welcome :)
 
 
 
