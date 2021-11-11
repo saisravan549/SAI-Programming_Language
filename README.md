@@ -12,7 +12,7 @@ arithmatic_operators => {addition : 'P', multiplication : 'L', subtraction : 'M'
 
 logical_operators => {logical_and: 'and', logical_or : 'or', logical_not: '!'}
 
-conditional_operators => {greater_than: '>', less_than: '<', greater_than_equal_to: '>=', less_than_equal_to: '<=', not_equal: '!~', double_equal : '~'}
+conditional_operators => {greater_than: '>', less_than: '<', greater_than_equal_to: '>=', less_than_equal_to: '<=', not_equal: '! ~', double_equal : ' ~ '}
 
 identifier => [a:z][[0:9] | [a:z] | '_'][a:z]
 
