@@ -28,7 +28,9 @@ expression => term { "P" | "M" term }
 
 term => factor { "L" | "D" factor }
 
-factor => Number | string | boolean | array | identifier | "-" factor | "(" expression ")" | function_call
+factor => Number | string | boolean | array | identifier | "-" factor | "(" expression ")" | function_call | string_indexing | array_indexing
+
+string_indexing | array_indexing => identifier '?' Number
 
 function_declaration => "fun" identifier function_arguments ":" [Code]
 
